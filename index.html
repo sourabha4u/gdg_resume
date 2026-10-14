@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Resume Tailor · Gemini + Firebase</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:wght@400;500;700&family=Google+Sans+Code&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <span class="logo" aria-hidden="true">✂</span>
+      <div>
+        <h1>Resume Tailor</h1>
+        <p>One resume in. A tailored version for every job out.</p>
+      </div>
+    </div>
+    <span id="authStatus" class="pill">Connecting…</span>
+  </header>
+
+  <main class="layout">
+    <!-- LEFT: inputs -->
+    <section class="panel inputs">
+      <h2><span class="step">1</span> Your core resume</h2>
+      <div class="tabs" role="tablist">
+        <button class="tab active" data-tab="resume-file" type="button">Upload PDF</button>
+        <button class="tab" data-tab="resume-text" type="button">Paste text</button>
+      </div>
+      <div id="resume-file" class="tabpane active">
+        <label class="drop">
+          <input id="resumeFile" type="file" accept="application/pdf,.txt" hidden />
+          <span id="resumeFileLabel">Drop or choose your resume (PDF or .txt)</span>
+        </label>
+      </div>
+      <div id="resume-text" class="tabpane">
+        <textarea id="resumeText" rows="9" placeholder="Paste your full resume here…"></textarea>
+      </div>
+
+      <h2><span class="step">2</span> The job</h2>
+      <input id="jobUrl" type="url" placeholder="Job link (optional)" />
+      <p class="or">or paste the description</p>
+      <textarea id="jobText" rows="9" placeholder="Paste the job description here…"></textarea>
+
+      <button id="tailorBtn" class="primary" type="button">Tailor my resume</button>
+      <p id="statusMsg" class="status" role="status"></p>
+    </section>
+
+    <!-- MIDDLE: result -->
+    <section class="panel result" id="resultPanel">
+      <div class="empty" id="emptyState">
+        <p class="big">Your tailored resume appears here.</p>
+        <p>Upload a resume, add a job, and press <strong>Tailor</strong>.</p>
+      </div>
+
+      <div id="resultView" hidden>
+        <div class="result-head">
+          <div>
+            <p class="eyebrow" id="rCompany"></p>
+            <h2 id="rRole"></h2>
+          </div>
+          <div class="scores">
+            <div class="score"><span id="rBefore">–</span><small>before</small></div>
+            <span class="arrow">→</span>
+            <div class="score after"><span id="rAfter">–</span><small>after</small></div>
+          </div>
+        </div>
+
+        <div class="chips" id="rKeywords"></div>
+
+        <div class="tabs" role="tablist">
+          <button class="tab active" data-tab="pane-resume" type="button">Resume</button>
+          <button class="tab" data-tab="pane-changes" type="button">What changed</button>
+          <button class="tab" data-tab="pane-gaps" type="button">Gaps <span id="gapCount" class="count"></span></button>
+        </div>
+
+        <div id="pane-resume" class="tabpane active">
+          <article class="resume" id="rResume"></article>
+          <div class="actions">
+            <button type="button" id="copyBtn">Copy text</button>
+            <button type="button" id="printBtn">Save as PDF</button>
+          </div>
+        </div>
+        <div id="pane-changes" class="tabpane"><ol class="changes" id="rChanges"></ol></div>
+        <div id="pane-gaps" class="tabpane"><ul class="gaps" id="rGaps"></ul></div>
+      </div>
+    </section>
+
+    <!-- RIGHT: version history (Firestore) -->
+    <aside class="panel history">
+      <h2>Versions</h2>
+      <p class="hint">Every tailored resume is saved here.</p>
+      <ul id="versionList" class="versions"><li class="muted">No versions yet.</li></ul>
+    </aside>
+  </main>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>

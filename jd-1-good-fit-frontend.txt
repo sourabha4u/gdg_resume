@@ -1,0 +1,18 @@
+Frontend Engineer (React) — Kaveri Health, Bengaluru (Hybrid)
+
+About the role
+Kaveri Health is building a patient-booking platform used by 200+ clinics. We're looking for a Frontend Engineer to own key parts of our React web app.
+
+What you'll do
+- Build fast, accessible user interfaces in React and TypeScript
+- Improve web performance (Core Web Vitals) across our booking flows
+- Collaborate closely with designers using Figma
+- Write unit and integration tests for UI components
+- Integrate with REST APIs owned by the backend team
+
+What we're looking for
+- 2+ years of professional experience with React
+- Strong JavaScript/TypeScript fundamentals
+- Experience with testing frameworks such as Jest or React Testing Library
+- Familiarity with CI/CD pipelines
+- Nice to have: Firebase or another BaaS, experience in healthcare products

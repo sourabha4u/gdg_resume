@@ -1,0 +1,32 @@
+PRIYA SHARMA
+priya.sharma@example.com | +91 98765 43210 | Gurugram, India | github.com/priya-dev-example | linkedin.com/in/priya-example
+
+SUMMARY
+Software engineer with 2.5 years of experience building web applications and backend services. Comfortable across the stack, with a focus on clean APIs and fast, reliable frontends.
+
+SKILLS
+JavaScript, TypeScript, React, Node.js, Express, Python, Flask, PostgreSQL, MongoDB, Firebase (Auth, Firestore, Hosting), Git, GitHub Actions, Docker, REST APIs, Jest, Figma
+
+EXPERIENCE
+Software Engineer, Brightcart Retail Tech, Gurugram | Jul 2024 – Present
+- Built and maintain 14 REST endpoints in Node.js/Express for the order-tracking service used by 40,000 monthly customers.
+- Rebuilt the customer dashboard in React, cutting page load time from 4.1s to 1.6s.
+- Wrote Jest unit tests that raised backend coverage from 38% to 71%.
+- Set up GitHub Actions CI that runs tests and lint on every pull request.
+- Worked with the design team in Figma to ship 6 new dashboard features.
+
+Software Engineering Intern, Fintrail Analytics, Noida | Jan 2024 – Jun 2024
+- Developed a Flask microservice that generated weekly PDF reports for 120 business clients.
+- Wrote PostgreSQL queries and indexes that reduced report generation time by 35%.
+- Containerised the reporting service with Docker for the QA team.
+
+PROJECTS
+StudyBuddy (personal project)
+- Built a React + Firebase app where students share notes; 300+ users across 3 colleges.
+- Used Firestore security rules and Firebase Auth (Google sign-in) to protect user data.
+
+EDUCATION
+B.Tech, Computer Science, GGSIPU, Delhi | 2020 – 2024 | CGPA 8.4
+
+CERTIFICATIONS
+Google Cloud Digital Leader (2024)

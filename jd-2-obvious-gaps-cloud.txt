@@ -1,0 +1,15 @@
+Cloud Platform Engineer — Northwind Logistics, Gurugram
+
+Responsibilities
+- Design and operate Kubernetes (GKE) clusters running 60+ microservices
+- Manage infrastructure as code with Terraform
+- Build observability with Prometheus, Grafana and OpenTelemetry
+- Write services in Go and Python
+- Own on-call rotation and incident response for production systems
+
+Requirements
+- 3+ years in DevOps / SRE / platform engineering
+- Hands-on Kubernetes and Terraform in production
+- Go programming experience
+- Google Cloud Professional Cloud Architect or similar certification
+- Experience with Docker and CI/CD (GitHub Actions, Cloud Build)
